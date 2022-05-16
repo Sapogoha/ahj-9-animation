@@ -1,0 +1,40 @@
+body {
+  background-color: #cde0f1;
+}
+
+.collapse {
+  max-width: 700px;
+  height: 100%;
+  min-height: 400px;
+  margin: 50px auto;
+  padding: 50px;
+  border: 1px solid #9aa1fb;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.collapse__button {
+  font-size: large;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #9aa1fb;
+  color: #ffffff;
+  background-color: #3191f2;
+}
+
+.collapse__button:hover {
+  background-color: #0a7df0;
+}
+
+.collapse__text {
+  display: none;
+  width: 600px;
+  margin: 10px 0px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #9aa1fb;
+  overflow: hidden;
+  box-sizing: border-box;
+}
