@@ -1,5 +1,6 @@
 body {
   background-color: #cde0f1;
+  font-size: large;
 }
 
 .collapse {
@@ -37,4 +38,197 @@ body {
   border: 1px solid #9aa1fb;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+.chat__open-button {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #9aa1fb;
+  border-radius: 50%;
+  background-color: #3191f2;
+  cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  transform: scale(1, 1);
+  transition: 100ms linear;
+}
+
+.chat__open-button:hover {
+  transform: scale(1.15, 1.15);
+  background-color: #0a7df0;
+}
+
+.chat__open-button_hidden {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+
+.chat__form {
+  width: 300px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  border: 1px solid #9aa1fb;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: all 100ms linear;
+}
+
+.chat__form_hidden {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+
+.chat__close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.chat__close::after {
+  content: '✕';
+}
+
+.chat__body {
+  margin: 10px;
+}
+
+.chat__message {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  border-radius: 5px;
+  border: 1px solid #9aa1fb;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px 10px;
+}
+
+.chat__submit-button {
+  cursor: pointer;
+  width: 100%;
+  font-size: large;
+  border-radius: 5px;
+  border: 1px solid #9aa1fb;
+  color: #ffffff;
+  background-color: #3191f2;
+  margin-top: 10px;
+  padding: 10px 15px;
+}
+
+.like__button {
+  font-size: large;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #9aa1fb;
+  color: #ffffff;
+  background-color: #3191f2;
+  position: absolute;
+  bottom: 15px;
+  left: 35px;
+}
+
+.like__picture {
+  position: absolute;
+  bottom: 15px;
+  left: 50px;
+  width: 35px;
+  height: 30px;
+  background-image: url('../img/heart.png');
+}
+
+.animation_1 {
+  animation: animation_1 500ms ease-out 1;
+}
+.animation_2 {
+  animation: animation_2 500ms ease-out 1;
+}
+.animation_3 {
+  animation: animation_3 500ms ease-out 1;
+}
+.animation_4 {
+  animation: animation_4 500ms ease-out 1;
+}
+
+@keyframes animation_1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    transform: translate(-50px, -50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translate(50px, -150px);
+  }
+  100% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+
+@keyframes animation_2 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translate(50px, -100px);
+  }
+  75% {
+    transform: translate(-50px, -150px);
+  }
+  100% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+
+@keyframes animation_3 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translate(-50px, -100px);
+  }
+  75% {
+    transform: translate(50px, -150px);
+  }
+  100% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+
+@keyframes animation_4 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    transform: translate(50px, -50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translate(-50px, -150px);
+  }
+  100% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
 }
